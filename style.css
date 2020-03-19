@@ -43,7 +43,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  background: white;
+  background: #375748;
   height: 70px;
   width: 70px;
 }
@@ -325,7 +325,7 @@ filter: alpha(opacity=70)
 #alt-caption {
     background-color: #375748;
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather';
     font-size: .9em;
     margin-left: auto;
     margin-right: auto;
@@ -349,7 +349,7 @@ footer {
 	padding-left: 25px;
 	padding-right: 25px;
 	text-align: center;
-	font-size: 10px;
+	font-size: 15px;
 }
 /*(footer links)*/
 footer a {
@@ -367,7 +367,7 @@ footer a:hover {
 .table {
 	position: relative;
 	text-align: center;
-	color: greenyellow;
+	color: #375748;
 	font-size: 0vw;
     
 }
