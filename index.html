@@ -3,7 +3,7 @@
 <html>
 	
 <head>
-	
+    
 <!--The following displays language used in browser to interpret page -->
 <meta charset="UTF-8">
 
@@ -58,7 +58,7 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
+
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
@@ -107,7 +107,7 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }    
-</script>   
+</script>     
 </head>
 
 <body>
@@ -142,7 +142,7 @@ function topFunction() {
 <!--end of navigation section-->
     
 <!--main image-->
-<img src="img/animation.gif" alt="Animation">
+<img src="img/pat-animation.gif" alt="Animation">
 <!--animated welcome-->
 <div class="wrapper">
 <!--animated welcome code here-->
@@ -152,7 +152,7 @@ function topFunction() {
 <div class="row whiteBG">
 <h2 id="home">SLO Tech</h2>
 <article>
-<p class="tab">Providing the lastest in tech news coming out of San Luis Obispo<br></p>
+<p class="tab">As San Luis Obispo continues its upward trend as a dominate tech city, SLO Tech is here to provide the lastest in tech-based news coming out of the Central Coast<br></p>
 <p class="tab"><a href="#gal">Cal Poly Digital Transformation Hub</a></p>
 </article>
 </div>
@@ -163,6 +163,13 @@ function topFunction() {
 <!--beginning of slideshow section-->
 <div class="row blueBG"><!--beginning of row-->
 <h2 id="gal">Cal Poly Digital Transformation Hub</h2>
+    <button onclick="myFunction()">DxHub</button>
+
+<script>
+function myFunction() {
+  alert("SLO Tech has no affiliation with the Cal Poly Digital Transformation Hub. Want to learn more? Go to their website at  https://dxhub.calpoly.edu");
+}
+</script>
 <article><!--beginning of article-->
 <p class="tab">An innovation engine solving real-world challenges in the public sector</p>
 <div id="slider"
@@ -226,7 +233,7 @@ data-cycle-speed="200">
 /&gt;
 	</div>
 </div>
-<p class="tab"><a href="#vid">Learn More</a></p>		
+<p class="tab"><a href="#vid">Student Innovations</a></p>		
 </article>
 </div>
 <!--end of audio section-->
@@ -238,14 +245,14 @@ data-cycle-speed="200">
 
 <!--beginning of video section-->
 <div class="row orangeBG">
-<h2 id="vid">Electric Scooter with Surface Classification Technology</h2>
+<h2 id="vid">Student Innovations</h2>
 <article>
 <p class="tab">Finding Solutions to Societal Issues</p>	
-<video width="100%" height="100%" poster="img/poster.jpg" controls>
+<video width="100%" height="100%" poster="img/poster.png" controls>
 <source src="img/electric_scooter.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-<p class="tab"><a href="#num">Learn More</a></p>
+<p class="tab"><a href="#num">Tech Growth</a></p>
 </article>
 </div>
 <!--end of video section-->
@@ -254,7 +261,7 @@ Your browser does not support the video tag.
 </div>
 <!--end of parallax image-->
 <!--beginning of infographic section-->
-    <h2 id="num">The Growth of Tech</h2>
+    <h2 id="num">Infographic</h2>
 <!--infographic embed code here-->
 	<div class="infogram-embed" data-id="23c65631-1bd2-4d4d-9108-109d93b0aacf" data-type="interactive" data-title="Ocean Sand"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/23c65631-1bd2-4d4d-9108-109d93b0aacf" style="color:#989898!important;text-decoration:none!important;" target="_blank">Ocean Sand</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
 <!--end of infographic section-->
@@ -304,15 +311,6 @@ function findInPage(str) {
 }
 </script>
 
-<FORM name=search onsubmit="return findInPage(this.string.value);">
-<P align=center><font size=10>
-<INPUT 
-style="BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 12pt; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid" 
-onchange="n = 0;" size=16 name=string>
-    </font><BR><INPUT style="BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #aaaaaa" type=submit value=Search in page ><center><font size=2pt;><font family=Times New Roman;><b>
-
-<BR> 
-</P></FORM></DIV><BR><!-- /Search-->
 <!--beginning of footer-->
 <footer>SLO Tech | San Luis Obispo, CA | <a href="mailto: pkmadden@calpoly.edu?Subject=Inquiry" target="_top">Send Email</a> | Copyright 2020 | Site by Patrick Madden
 </footer>
@@ -346,6 +344,7 @@ onchange="n = 0;" size=16 name=string>
   }); // end DOM ready
 })(jQuery); // end jQuery
 	</script>
+    
 	<script>
 	var headertext = [];
 var headers = document.querySelectorAll("#miyazaki th"),
